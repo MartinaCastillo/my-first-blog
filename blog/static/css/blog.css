@@ -1,5 +1,5 @@
 h1 a, h2 a {
-     color: #C25100;
+     color: #3a478f;
 }
 
 h1 a, h2 a {
@@ -9,11 +9,11 @@ h1 a, h2 a {
 
 .fecha {
     font-weight: lighter;
-    color: #944d1a;
+    color: #554f91;
 }
 
 .header {
-    background-color: #C25100;
+    background-color: #000e4e;
     margin-top: 0;
     padding: 20px 20px 20px 40px;
 }
@@ -57,5 +57,5 @@ h1, h2, h3, h4 {
 }
 
 .post h2 a, .post h2 a:visited {
-    color: #694400;
+    color: #151d64;
 }
