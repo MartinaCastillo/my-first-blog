@@ -11,72 +11,7 @@
         <link rel="stylesheet" href="https://unpkg.com/bootstrap-table@1.18.3/dist/bootstrap-table.min.css">
         <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.25/css/jquery.dataTables.css">
   
-       <style>
-form {
-  /* Center the form on the page */
-  margin: 0 auto;
-  width: 500px;
-  /* Form outline */
-  padding: 1em;
-  border: 1px solid #CCC;
-  border-radius: 1em;
-}
 
-ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-form li + li {
-  margin-top: 1em;
-}
-
-label {
-    margin-block-start: auto;
-}
-
-input,
-textarea {
-  /* To make sure that all text fields have the same font settings
-     By default, textareas have a monospace font */
-  font: 1em sans-serif;
-
-  /* Uniform text field size */
-  width: 400px;
-  box-sizing: border-box;
-
-  /* Match form field borders */
-  border: 1px solid #999;
-}
-
-input:focus,
-textarea:focus {
-  /* Additional highlight for focused elements */
-  border-color: #000;
-}
-
-textarea {
-  /* Align multiline text fields with their labels */
-  vertical-align: top;
-
-  /* Provide space to type some text */
-  height: 5em;
-}
-
-.button {
-  /* Align buttons with the text fields */
-  padding-left: 90px;
-  align-content: center; /* same size as the label elements */
-}
-
-button {
-  /* This extra margin represent roughly the same space as the space
-     between the labels and their text fields */
-  margin-left: 200px;
-  margin-top: 10px;
-}
-        </style>
     </head>
     <body>
         <div class="header">
@@ -84,7 +19,7 @@ button {
             <a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
             {% endif %}
 
-            <h1><a href="/">Bienvenido a mi Blog</a></h1>
+            <h1>Bienvenido a mi Blog</h1>
         </div>
         
         <div style="text-align:center;" class="video">
@@ -93,9 +28,9 @@ button {
             </iframe>
         </div>
         <form action="/my-handling-form-page" method="post">
-            <ul>
+            <ul class="videoform">
              <li>
-               <label for="name">Tu nombre:</label>
+               <label for="name">Ingrese su nombre:</label>
                <input type="text" id="name" name="user_name">
              </li>
              <li>
@@ -106,10 +41,17 @@ button {
                <label for="msg">¿Qué video te gustaria ver?:</label>
                <textarea id="msg" name="user_message"></textarea>
              </li>
+          
+              <div class="container">
+                <a href="#" target="_blank" class="button-wrap">Error 404</a>
+              </div>
+
             </ul>
-            <button>Enviar</button>
+           
            </form>
            <br>
+
+
            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
            <div class="container">
             <table class="table table-stripped">            
